@@ -13,7 +13,7 @@ script:
 
   - docker tag udagram-api-feed namha1/udagram-api-feed
   - docker tag udagram-api-user namha1/udagram-api-user
-  - docker tag udagram-frontend namha1/udagram-frontend:local
+  - docker tag udagram-frontend namha1/udagram-frontend:v6
   - docker tag udagram-reverseproxy namha1/udagram-reverseproxy
 
 
@@ -23,4 +23,4 @@ after_success:
   - docker push namha1/udagram-api-feed
   - docker push namha1/udagram-api-user
   - docker push namha1/udagram-reverseproxy
-  - docker push namha1/udagram-frontend:local
+  - docker push namha1/udagram-frontend:v6
